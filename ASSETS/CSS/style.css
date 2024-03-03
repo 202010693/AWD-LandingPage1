@@ -1,576 +1,93 @@
-body{
-	font-family:'Open Sans';
-    font-style:condensed;
-    background: #5b2072; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #5b2072 0%, #5d1566 50%, #251a41 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#5b2072), color-stop(50%,#5d1566), color-stop(100%,#251a41)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  #5b2072 0%,#5d1566 50%,#251a41 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  #5b2072 0%,#5d1566 50%,#251a41 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  #5b2072 0%,#5d1566 50%,#251a41 100%); /* IE10+ */
-    background: radial-gradient(ellipse at center,  #5b2072 0%,#5d1566 50%,#251a41 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b2072', endColorstr='#251a41',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-a{
-	font-size: 18px;
-	font-family:'Open Sans';
-    color: white;
-    text-decoration: none;
-
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #f7f4ba, #af4261);
+    min-height: 100vh;
 }
 
-input:focus,textarea:focus,select:focus{
-  border:1px solid #fafafa;
-  -webkit-box-shadow:0 0 6px #007eff;
-  -moz-box-shadow:0 0 5px #007eff;
-  box-shadow:0 0 5px #007eff;
-  outline: none;
-}
-
-sup{
-
-	font-size: 40px;
-}
-
-ul{
-	list-style: none;
-	font-size: 15px;
-	font-family:'Open Sans';
-	color: #9095aa;
-	padding: 0px;
-	margin: 0px;
-
-
-}
-
-
-li{
-border-bottom: 1px solid #494a5a;
-padding: 0px;
-margin: 0px;
-text-align: center;
-height: 52px;
-line-height: 52px;
-}
-
-
-#container{
-	width: 100%;
-  text-align:center;
-}
-
-.whole{
-	display: inline-block;
-  
-}
-
-
-
-.type{
-	width: 300px;
-	border-radius: 5px 5px 0px 0px;
-	background-color: #eac80d;
-	height: 62px;
-	border-bottom: 3px solid #bfa30c;
-
-}
-
-.type p{
-	font-family:'Open Sans';
-    font-weight: 800;
-	font-size: 29px;
-	text-transform: uppercase;
-	color: white;
-	text-align: center;
-	padding-top: 10px;
-
-	
-
-}
-
-.plan{
-	width: 300px;
-	background-color: #2b2937;
-
-	border-radius: 0px 0px 5px 5px;
-    font-family:'Open Sans';
-    font-style:condensed;
-    font-size: 90px;
-    color: white;
-    text-align: center;
-
-
-}
-.standard{
-	background-color: #1abc9c;
-	border-bottom: 3px solid #18937b;
-}
-
-.ultimate{
-	background-color: #5d6a9a;
-	border-bottom: 3px solid #474f6f;
-}
-
-
-
-
-
-.header{
-	border-bottom: 1px solid #494a5a;
-	padding-bottom: 39px;
-
-
-}
-
-.header span{
-	font-size: 32px;
-
-	
-}
-
-.month{
-	font-size: 14px;
-	color: #575757;
-	padding: 0px;
-	margin: -10px;
-}
-
-.price{
-	height:80px;
-}
-
-.cart{
-  
-  color:white;
-  position: relative;
-  top: 16px;
-  
-}
-
-.login_c{
-  width:500px;
-  background-color:#2b2937;
-  height:300px;
-  margin: 0 auto;
-  margin-top:40px;
-  border-radius:5px;
-  
-}
-
-.login_c input{
-  width: 350px;
-height: 40px;
-  border: 1px solid #494a5a;
-  margin-bottom:20px;
-  border-radius:5px;
-  padding-left: 10px;
-
-}
-
-
-.login{
-  background-color: #BC4B1A;
-	border-bottom: 3px solid #7C3618;
-  width:100%;
-  
-}
-
-.top{
-  margin-top:35px;
-}
-
-.nodisplay{
-  opacity: 0.1;
-}
-
-.selected{
-  background-color:#1F1B36;
-  margin:0px;
-  padding:0px;
-}
-
-
-body,
-html {
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100%;
-    
-}
+    min-height: 100vh;
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-}
-
-.topnav {
-    font-size: 16px;
-    border-bottom: 1px outset rgba(192, 192, 192, 0.5);
-    background: rgba(192, 192, 192, 0.9);
-    box-shadow: 0px 1px rgba(0, 0, 0, 0.3);
-}
-.topnav ul.navbar-nav li a {
-background: rgba(28, 28, 28, 0.1);
-color: #000;
-}
-.topnav ul.navbar-nav li a:hover,
-.topnav ul.navbar-nav li a:focus
- {
-background: rgba(255, 255, 255, 0.5);
-color: #000;
-}
-
-.topnav .navbar-brand {
-  background: rgba(28, 28, 28, 0.0);
-  color: #000;
-}
-
-.topnav .navbar-brand:hover,
-.topnav .navbar-brand:focus {
-  background: rgba(255, 255, 255, 0.5);
-  color: #000;
-}
-
-.lead {
-    font-size: 18px;
-    font-weight: 400;
-}
-/*top background*/
-.intro-header { 
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    text-align: center;
-    background: url('https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 855px;
-}
-.bg-overlay {
-  background:rgba(0,0,0, 0.3);
-  height: 855px;
-}
-
-.intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-}
-/*Big header*/
-.intro-message > h1 {
-    margin-top: -50px;
-    text-shadow: 2px 1px 2px #000;
-    font-size: 5em;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-/*small header*/
-.intro-message > h3 {
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-  color: black;
-}
-
-@media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
+    .title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: black;
+        margin-bottom: 2rem;
     }
 
-    .intro-message > h1 {
-        font-size: 3em;
-    }
+    .cardHolder {
+        display: grid;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 1rem;
 
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
+        .card {
+            border-radius: 0.5rem;
+            padding: 1rem;
+            background: linear-gradient(
+                45deg,
+                #ff2c7d 0%,
+                #ff2c7d 42%,
+                #ffffff 42%,
+                #ffffff 45%,
+                #ff2c7d 45%,
+                #ff2c7d 48%,
+                #ffffff 48%,
+                #ffffff 51%,
+                #ff2c7d 51%,
+                #ff2c7d 54%,
+                #ffffff 54%,
+                #ffffff 57%,
+                #ff2c7d 57%,
+                #ff2c7d 60%,
+                #ffffff 60%,
+                #ffffff 100%
+            );
+            background-size: 300%;
+            box-shadow: 2px 3px 5px white;
+            transition: 0.5s ease-in-out;
 
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
+            .cardTitle {
+                color: white;
+                transition: 0.3s ease-in-out;
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin-bottom: 1.5rem;
+            }
 
-    .intro-divider {
-        width: 100%;
-    }
-}
-/*line*/
-hr.intro-divider {
-  border: 1px outset rgba(255, 255, 255, 0.2);
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-  width: 100%;
-}
-/* social buttons */
-.btn {
-  display: inline-block;
-  color: #000;
-  border: 2px outset rgba(0, 0, 0, 0.9);
-  background: #C0C0C0;
-  text-shadow: 1px 1px 1px rgba(0,0,0, 20);
-  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
-  letter-spacing: 2px;
-  transition: 0.2s;
-}
+            &:hover {
+                animation: colorChange 0.3s ease-in-out;
+                box-shadow: 3px 5px 5px #ff2c7d;
+                background-position: 100%;
 
-.btn:hover {
-	color: #fff;
-  border: 2px outset rgba(0, 0, 0, 0.9);
-  background: rgba(0,0,0, 0.9);
-  transform:scale(1.1);
-  transition: 0.2s;
-  text-shadow: 1px 1px 1px rgba(0,0,0, 20);
-  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
-  letter-spacing: 2px;
-}
-
-/*section 2*/
-.content-section-a {
-    padding: 50px 0;
-    background: url('https://68.media.tumblr.com/eb2382a5a4c996cfdab27bc0d1eb51ff/tumblr_nt5umxS1FY1ud7rr3o1_540.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 855px;
-}
-.bg-overlay2 {
-  margin-top: -50px;
-  background: rgba(255, 255, 255, 0.2);
-  height: 855px;
-}
-  /*self-taught*/
-.container .link {
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  font-size: 22px;
-}
-.container .link-footer {
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-size: 32px;
-}
-.container .link-footer:hover {
-  color:rgba(24,39,40, 0.8);
-  font-weight: bold;
-  font-size: 32px;
-}
-
-.container .link:hover {
-  color: rgb(0,0,128);
-  font-weight: bold;
-  font-size: 22.5px;
-}
-
-h2.section-heading {
-    margin-top: 100px;
-    font-size: 3em;
-    color: rgba(0, 0, 0, 0.9);
-}
-
-  /*text*/
- .content-section-a p {
-    font-size: 22px;
-   font-weight: bold;
-    color: #000;
-  }
-.content-section-a p a {
-  color: silver;
-  font-weight: bold;
-}
-/*profile picture*/
-.img-circle {
-  margin-top: 150px;
-  border: 1px outset rgba(255, 255, 255, 0.3);
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-  
-}
-
-
-/* Portfolio section*/
-section {
-  color: black;
-  background: url('https://68.media.tumblr.com/d3fd545cd977a174beef12c1106880bf/tumblr_nt505iKkul1ud7rr3o1_1280.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
-
- #below-section {
-  color: #000;
-}
-
-#small-text {
-  color: white;
-}
-
-/*.portfolio-item {
-  overflow: hidden;
-  padding: 7px;
-  color: white;
-  height: 308px;
-}*/
-/*Portfolio items*/
-
-#portfolio .portfolio-item {
-  margin: 0 0 15px;
-  right: 0;
-  border: 1px outset rgba(255, 255, 255, 0.6);
-}
-
-#portfolio .portfolio-item:hover {
-  transition: 0.5s;
-  box-shadow: 5px 10px 5px rgba(0,0,0,0.9);
-}
-
-#portfolio .portfolio-item .portfolio-link {
-  display: block;
-  position: relative;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background: rgba(0, 0, 0, .7);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all ease .5s;
-  -webkit-transition: all ease .5s;
-  -moz-transition: all ease .5s,
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-  opacity: 1;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  font-size: 20px;
-  text-align: center;
-  top: 50%;
-  margin-top: -12px;
-  color: #fff;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-  margin-top: -12px;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-  margin: 0;
-}
-
-#portfolio .portfolio-item .portfolio-caption {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: rgba(0,0,0, 0.8);
-  text-align: center;
-  padding: 25px;
-}
-
-#portfolio .portfolio-item .portfolio-caption h4 {
-  color: #fff;
-  text-transform: none;
-  margin: 0;
-}
-
-#portfolio .portfolio-item .portfolio-caption p {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-size: 13px;
-  margin: 0;
-}
-
-#portfolio * {
-  z-index: 2;
-}
-
-@media (min-width:767px) {
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
-}
-
-.col-md-4 {
-  overflow: hidden;
-  display: inline-block;
-  border: 1px outset rgba(255, 255, 255, 0.6);
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 1%;
-  text-align: center;
-  box-shadow: 2px 3px 2px rgba(0,0,0,0.3);
-  text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
-  cursor: pointer;
-}
-.col-md-4:hover {
-  transition: 0.5s;
-  box-shadow: 5px 10px 5px rgba(0,0,0,0.9);  
-}
-
-.section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 3px solid #e7e7e7;
-}
-
-.banner {
-    padding: 100px 0;
-    background: url('https://68.media.tumblr.com/ac46aa24b44b5036e9200abb71f810d9/tumblr_nt5vzxV6Us1ud7rr3o1_1280.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 755px;
-}
-
-.bg-overlay4 {
-  margin-top: -100px;
-  padding: 100px 0;
-  background: rgba(255,255,255, 0.3);
-  height: 755px;
-}
-
-.banner ul {
-    margin-bottom: 0;
-}
-
-.banner-social-buttons {
-    float: right;
-    margin-top: 0;
-}
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        float: left;
-        margin-top: 15px;
+                .cardTitle {
+                    color: #ff2c7d;
+                    font-weight: 700;
+                }
+            }
+        }
     }
 }
 
-
-
-    ul.banner-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
+@keyframes colorChange {
+    0% {
+        background-position: 0%;
     }
-
-    ul.banner-social-buttons > li:last-child {
-        margin-bottom: 0;
+    100% {
+        background-position: 100%;
     }
-
-h2.connect {
-   margin: 0;
-   color: rgba(0, 0, 0, 0.9);
-}
-
-footer {
-    padding: 50px 0;
-    background: rgba(192, 192, 192, 0.9);
-}
-
-p.copyright {
-    margin: 15px 0 0;
 }
