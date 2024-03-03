@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.day-button {
+  margin: 5px;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+#monday {
+  background-color: #ff00ff; /* Fuchsia Pink */
+}
+
+#tuesday {
+  background-color: #ffc0cb; /* Pink */
+}
+
+#wednesday {
+  background-color: #0000ff; /* Blue */
+}
+
+#thursday {
+  background-color: #008000; /* Green */
+}
+
+#friday {
+  background-color: #ffff00; /* Yellow */
+}
+
+#saturday {
+  background-color: #ffa500; /* Orange */
+}
+
+#sunday {
+  background-color: #ff0000; /* Red */
+}
+
+.day-button:hover {
+  background-color: #2980b9; /* Adjust hover color */
+  transform: scale(1.1); /* Scale factor on hover */
+}
+
+.animation-box {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s ease, border-color 0.5s ease;
+}
